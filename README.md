@@ -3,6 +3,6 @@ Starbucks landing page
 
 Tools: 
 
-HTML
-CSS
-Javascript
+• HTML
+• CSS
+• Javascript
