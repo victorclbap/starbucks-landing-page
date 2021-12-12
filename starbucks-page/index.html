@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header class="header">
+            <a href=" " ><img src="./images/logo.png" class="header__logo"></a>
+            <ul class="header__list">
+                <li class="list__item"><a href=" " class="list__link">Home</a></li>
+                <li class="list__item"><a href=" " class="list__link">Menu</a></li>
+                <li class="list__item"><a href=" " class="list__link">What's new</a></li>
+                <li class="list__item"><a href=" " class="list__link">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="content__textBox">
+                <h2 class="content__title">It's not just coffee<br>It's<span class="content__starbucks"> Starbucks</span></h2>
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <div class="content__linkBox"><a href=" " class="content__link">Learn More</a></div>
+            </div>
+            <div class="img">
+                <img src="./images/img1.png" class="img__starbucks">
+            </div>
+            <ul class="thumbList">
+                <li class="thumbList__item"><img class ="thumbList__img" src="./images/thumb1.png" onclick = "imgSlider('./images/img1.png');changeCircleColor('#017143')"></li>
+                <li class="thumbList__item"><img class ="thumbList__img" src="./images/thumb2.png" onclick = "imgSlider('./images/img2.png');changeCircleColor('#eb7495')"></li>
+                <li class="thumbList__item"><img class ="thumbList__img" src="./images/thumb3.png" onclick = "imgSlider('./images/img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+            <ul class="socialList">
+                <li class="socialList__item"><a href=" " class="socialList__link"><img src="./images/facebook.png"></a></li>
+                <li class="socialList__item"><a href=" " class="socialList__link"><img src="./images/twitter.png"></a></li>
+                <li class="socialList__item"><a href=" " class="socialList__link"><img src="./images/instagram.png"></a></li>
+            </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider (newImg){
+            document.querySelector(".img__starbucks").src = newImg;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function toggleMenu () {
+            let navigation = document.querySelector('.header__list')
+            navigation.classList.toggle('activeNav')    
+
+        }
+    </script>
+</body>
+</html>

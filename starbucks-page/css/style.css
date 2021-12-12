@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 6.25rem;
+}
+
+.header__logo {
+    max-width: 5rem;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header__list {
+    display: flex;
+}
+
+.list__link{
+    color: #333;
+    font-weight: 400;
+    margin-left: 2.5rem;
+    text-decoration: none;
+    
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.content__textBox{
+    max-width: 37.5rem;
+}
+
+.content__title {
+    color: #333;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content__starbucks:hover {
+    color: #06ac06;
+    transition: 0.5s;
+}
+
+.list__link:hover{
+    color: #06ac06;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.content__starbucks {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content__text {
+    color: #333;
+}
+
+.content__link{
+    padding: 0.4rem 1.25rem;
+    background: #017143;
+    color: #fff;
+    border-radius: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.063rem;
+    text-decoration: none;
+    
+}
+
+.content__linkBox :hover{
+    background-color: #06ac06;
+    transition: 0.5s;
+    padding: 0.5rem 1.3rem;
+
+}
+
+.content__linkBox{
+    margin-top: 2.25rem;
+}
+
+.img{
+    width: 37.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3.125rem;
+    margin-top: 3.125rem;
+    position: relative;
+}
+
+.img__starbucks{
+    max-width: 21.25rem;
+}
+
+.thumbList{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 1.25rem;
+}
+
+.thumbList__item{
+    list-style: none;
+    margin: 0 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumbList__item:hover{
+    transform:translateY(-0.938rem)
+}
+
+.thumbList__img{
+    max-width: 3.75rem;
+}
+
+.socialList {
+    position: absolute;
+    top: 50%;
+    right: 1.875rem;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialList__item{
+    list-style: none;
+}
+
+.socialList__link{
+    display: inline-block;
+    margin: 0.313rem 0;
+    transform: scale(0.6);
+    filter: invert(1);
+    
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(37.5rem at right 50rem);
+}
+
+@media (max-width:991px){
+
+    .header__logo {
+        display: none;
+    }
+    
+    
+    .header {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.875rem;
+        position: absolute;
+        top: 0;
+        left: 0.125rem;
+    }
+
+    .header__logo {
+        max-width: 3.75rem;
+        margin-left: 1rem;
+        position: relative;
+    }
+
+    .header__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        font-size: 1.125rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+        position: absolute;
+        top: 20%; 
+    }
+    .content__title {
+        font-size: 3.2rem;
+    }
+
+    .content__text{
+        margin-top: 1rem;
+    }
+    
+    .img__starbucks{
+        max-width: 18rem;
+    }
+
+    .img{
+        width: 37.5rem;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3.125rem;
+        margin-top: 3.125rem;
+        margin-right: 16rem;
+        margin-bottom: 8rem;
+        position: relative;
+    }
+
+    .circle {
+        top: 70%;
+    }
+
+    .socialList__link{
+        filter: invert(0);
+    }
+}
+
+@media (max-width:360px){
+    .content__title {
+        font-size: 2rem;
+        }
+    .content__text{
+        margin-top: 1rem;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .img__starbucks{
+        max-width: 15rem;
+    }
+    .img{
+        margin-right: 20rem;
+    }
+    .socialList__link{ 
+        transform: scale(0.4); 
+    }
+    .header__list{
+        margin: 2rem auto;
+        font-size: 0.9rem;
+    }
+    .list__link{
+
+        margin-left: 1.5rem
+    }
+
+}
+
+
+@media (min-width:992px){
+
+.content__title {
+    font-size: 3rem;
+    }
+}
+    @media (min-width:1128px){
+        .content__title{
+        font-size: 4rem;    
+    }
+}
