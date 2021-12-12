@@ -1,8 +1,3 @@
-Starbucks landing page
+**Description:** Starbucks landing page
 
-
--> TOOLS: 
-
-• HTML
-• CSS
-• Javascript
+**Tools:** HTML, CSS, Javascript
