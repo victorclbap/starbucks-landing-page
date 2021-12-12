@@ -1,7 +1,7 @@
 Starbucks landing page
 
 
-Tools: 
+-> TOOLS: 
 
 • HTML
 • CSS
