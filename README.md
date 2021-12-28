@@ -1,5 +1,5 @@
-**Description:** Starbucks landing page
+**Descrição: ** Clone da landing page do Starbucks 
 
-**Tools:** HTML, CSS, Javascript
+**Ferramentas:** HTML, CSS, Javascript
 
-Ongoing
+
